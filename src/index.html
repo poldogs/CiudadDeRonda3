@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronda, Ciudad Soñada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <link rel="icon" type="image/png" href="img/favicon_color.jpg">
+</head>
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <a href="index.html" class="enlace">
+            <img src="img/ronda_logo.png" alt="ronda" class="logo animated-logo">
+        </a>
+        <ul>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="body">
+        <div class="index-flex1">
+          <picture>
+            <source srcset='img/ronda_logo.png?width=800&as=webp' type="image/webp" media="(min-width: 768px)">
+            <source srcset='img/ronda_logo.png?width=800' type="image/jpeg" media="(min-width: 768px)">
+            <source srcset='img/ronda_logo.png?width=300&as=webp' type="image/webp">
+            <source srcset='img/ronda_logo.png?width=300' type="image/jpeg">
+            <img src='img/ronda_logo.png?width=800' alt="ronda_logo" />
+          </picture>
+        <h1>Ronda,</h1></div>
+        <h2>Ciudad Soñada</h2>
+        <div class="yellow-bg"><h2>Selecciona un lugar de Ronda para ver en Google Maps</h2>
+        <select id="google-maps">
+            <option value="plazaToros">Plaza de Toros</option>
+            <option value="alameda">Alameda del Tajo</option>
+            <option value="puertaGrande">Puerta Grande</option>
+            <option value="casaOrtega">Casa Ortega</option>
+            <option value="lechuguita">Bar El Lechuguita</option>
+            <option value="tajoRonda" selected>Tajo de Ronda</option>
+            <option value="clemente">Bar Clemente</option>
+            <option value="museoLara">Museo Lara</option>
+            <option value="donBosco">Casa-Museo Don Bosco</option>
+            <option value="mondragon">Palacio de los Mondragones</option>
+            <option value="mirador">Mirador al Tajo</option>
+            <option value="banosArabes">Baños Árabes</option>
+            <option value="paseoMuralla">Paseo de la muralla del Carmen</option>
+            <option value="jardinesCuenca">Jardines de Cuenca</option>
+        </select>
+        <a target="_blank" class="google-btn" href="https://goo.gl/maps/vtajwPJM5WmRyHV38">Ver en Google Maps</a></div>
+        <div id="map"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script type="module" src="app.js"></script>
+    
+    <div class="gallery">
+        <div class="image-wrapper">
+            <a href="categorias.html#restaurantes"><img src="img/casa-ortega.jpg" alt="Restaurantes" class="image" /></a>
+        </div>
+        <div class="image-wrapper">
+            <a href="categorias.html#museos"><img src="img/Museo-Lara-Ronda-6660-min.jpg" alt="Museos" class="image" /></a>
+        </div>
+        <div class="image-wrapper">
+          <a href="categorias.html#senderismo"><img src="img/mirador-puente.jpg" alt="Senderismo" class="image" /></a>
+        </div>
+        <div class="image-wrapper">
+          <a href="categorias.html#monumentos"><img src="img/panoramica-plaza-de-toros-la-ronda-495x266.jpg" alt="Monumentos" class="image" /></a>
+        </div>
+      </div>
+      
+</body>
+<footer>
+        <div class="container">
+          <div class="column">
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="categorias.html">Categorías</a></li>
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a href="enlaces.html">Enlaces</a></li>
+              <li><a href="alameda.html">Alameda</a></li>
+              <li><a href="banosArabes.html">Baños Árabes</a></li>
+              <li><a href="puertaGrande.html">Rest. Puerta Grande</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+                <li><a href="donBosco.html">Museo Don Bosco</a></li>
+                <li><a href="jardinesCuenca.html">Jardines de Cuenca</a></li>
+                <li><a href="lechuguita.html">Bar Lechugita</a></li>
+                <li><a href="mirador.html">Mirador al Tajo</a></li>
+                <li><a href="mondragon.html">Palacio Mondragones</a></li>
+                <li><a href="museoLara.html">Museo Lara</a></li>
+                <li><a href="paseoMuralla.html">Paseo por la muralla</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+                <li><a href="casaOrtega.html">Casa Ortega</a></li>
+                <li><a href="clemente.html">Bar Clemente</a></li>
+                <li><a href="plazaToros.html">Plaza de toros</a></li>
+                <li><a href="tajoRonda.html">Tajo de Ronda</a></li>
+                <img src="img/ronda_panoramica_min.jpg" alt="Ronda">
+            </ul>
+          </div>
+        </div>
+    <p>Creado por Leopoldo Gallardo Sedeño, 2023</p>
+    <span id="local-time"></span>
+</footer>
+</html>
