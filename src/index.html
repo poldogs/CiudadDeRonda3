@@ -13,24 +13,24 @@
      crossorigin=""/>
     <link rel="icon" type="image/png" href="img/favicon_color.jpg">
 </head>
-<header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
-        <a href="index.html" class="enlace">
-            <img src="img/ronda_logo.png" alt="ronda" class="logo animated-logo">
-        </a>
-        <ul>
-            <li><a href="categorias.html">Categorías</a></li>
-            <li><a href="presentacion.html">Presentación</a></li>
-            <li><a href="enlaces.html">Enlaces</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <a href="index.html" class="enlace">
+                <img src="img/ronda_logo.png" alt="ronda" class="logo animated-logo">
+            </a>
+            <ul>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="body">
         <div class="index-flex1">
           <picture>
@@ -42,8 +42,9 @@
           </picture>
         <h1>Ronda,</h1></div>
         <h2>Ciudad Soñada</h2>
-        <div class="yellow-bg"><h2>Selecciona un lugar de Ronda para ver en Google Maps</h2>
-        <select id="google-maps">
+        <div class="yellow-bg">
+          <h2>Selecciona un lugar de Ronda para ver en Google Maps</h2>
+          <select id="google-maps">
             <option value="plazaToros">Plaza de Toros</option>
             <option value="alameda">Alameda del Tajo</option>
             <option value="puertaGrande">Puerta Grande</option>
@@ -58,8 +59,9 @@
             <option value="banosArabes">Baños Árabes</option>
             <option value="paseoMuralla">Paseo de la muralla del Carmen</option>
             <option value="jardinesCuenca">Jardines de Cuenca</option>
-        </select>
-        <a target="_blank" class="google-btn" href="https://goo.gl/maps/vtajwPJM5WmRyHV38">Ver en Google Maps</a></div>
+          </select>
+          <a target="_blank" class="google-btn" href="https://goo.gl/maps/vtajwPJM5WmRyHV38">Ver en Google Maps</a>
+        </div>
         <div id="map"></div>
     </div>
     
@@ -81,10 +83,9 @@
         <div class="image-wrapper">
           <a href="categorias.html#monumentos"><img src="img/panoramica-plaza-de-toros-la-ronda-495x266.jpg" alt="Monumentos" class="image" /></a>
         </div>
-      </div>
-      
-</body>
-<footer>
+    </div>
+    
+    <div class="footer">
         <div class="container">
           <div class="column">
             <h3>Enlaces</h3>
@@ -115,11 +116,12 @@
                 <li><a href="clemente.html">Bar Clemente</a></li>
                 <li><a href="plazaToros.html">Plaza de toros</a></li>
                 <li><a href="tajoRonda.html">Tajo de Ronda</a></li>
-                <img src="img/ronda_panoramica_min.jpg" alt="Ronda">
             </ul>
+            <img src="img/ronda_panoramica_min.jpg" alt="Ronda">
           </div>
         </div>
     <p>Creado por Leopoldo Gallardo Sedeño, 2023</p>
     <span id="local-time"></span>
+</div>
 </footer>
 </html>
